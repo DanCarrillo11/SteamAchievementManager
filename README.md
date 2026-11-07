@@ -1,8 +1,13 @@
 <div align="center">
   <img src="assets/logo-transparent.png" width="76" alt="SteamAchievementManager icon">
   <h1>SteamAchievementManager</h1>
-  <p>A focused desktop workspace for your Steam achievements.</p>
+  <p>Manage Steam achievements on Windows. Review every change before applying it.</p>
+  <p>An independent project by Daniel Carrillo.</p>
   <p><strong>Windows x64 · Stable release · English interface</strong></p>
+  <p>
+    <a href="https://github.com/DanCarrillo11/SteamAchievementManager/releases/download/v1.3.0/SteamAchievementManager-1.3.0-Setup.exe"><strong>Download for Windows</strong></a> ·
+    <a href="https://github.com/DanCarrillo11/SteamAchievementManager/releases/download/v1.3.0/SteamAchievementManager-1.3.0-Portable.zip"><strong>Portable ZIP</strong></a>
+  </p>
   <p>
     <a href="#features">Features</a> ·
     <a href="#getting-started">Getting started</a> ·
@@ -18,11 +23,8 @@ achievement states. These screenshots do not show a real user's account.*
 
 ## Availability
 
-**1.3.0** is the current stable release for Windows x64.
-
-- [Download the installer](https://github.com/DanCarrillo11/SteamAchievementManager/releases/download/v1.3.0/SteamAchievementManager-1.3.0-Setup.exe)
-- [Download the portable ZIP](https://github.com/DanCarrillo11/SteamAchievementManager/releases/download/v1.3.0/SteamAchievementManager-1.3.0-Portable.zip)
-- [Release notes and SHA-256 checksums](https://github.com/DanCarrillo11/SteamAchievementManager/releases/tag/v1.3.0)
+**1.3.0** is the current stable release for Windows x64. See the
+[release notes and SHA-256 checksums](https://github.com/DanCarrillo11/SteamAchievementManager/releases/tag/v1.3.0).
 
 The downloads include the runtime; Python is only needed for development.
 Live operations require an online, signed-in Steam desktop client. No Steam
@@ -118,9 +120,9 @@ achievement helper is connected; the manager does not launch the game executable
 
 Automated Windows checks cover drafts, reviewed writes, account isolation,
 partial/unknown outcomes, library caching, artwork recovery and update selection.
-The release workflow also checks the frozen helper and offscreen interface,
-clean installation, upgrade from 1.1.0, retained local data and uninstall
-before publication. These synthetic checks do not modify a Steam account.
+The 1.3.0 release run verified the frozen helper, offscreen interface, clean
+installation, upgrade from 1.2.0, retained local data and uninstall.
+These synthetic checks do not modify a Steam account.
 
 The owner reports successful use with their tested games. One independently
 recorded real relock was acknowledged by Steam and confirmed in a fresh process,
