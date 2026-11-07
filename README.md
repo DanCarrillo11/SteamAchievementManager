@@ -120,9 +120,9 @@ achievement helper is connected; the manager does not launch the game executable
 
 Automated Windows checks cover drafts, reviewed writes, account isolation,
 partial/unknown outcomes, library caching, artwork recovery and update selection.
-The release workflow also checks the frozen helper and offscreen interface,
-clean installation, upgrade from 1.2.0, retained local data and uninstall
-before publication. These synthetic checks do not modify a Steam account.
+The 1.3.0 release run verified the frozen helper, offscreen interface, clean
+installation, upgrade from 1.2.0, retained local data and uninstall.
+These synthetic checks do not modify a Steam account.
 
 The owner reports successful use with their tested games. One independently
 recorded real relock was acknowledged by Steam and confirmed in a fresh process,
