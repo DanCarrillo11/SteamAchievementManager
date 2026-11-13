@@ -55,8 +55,10 @@ def check_installation(installer, previous=None):
                             "/DIR=" + str(destination), "/GROUP=Achievement Desk Release Smoke", "/TASKS=",
                             "/LOG=" + str(ROOT / (".ci-artifacts/" + label + ".log"))],
                            check=True, timeout=120, env=environment, creationflags=subprocess.CREATE_NO_WINDOW)
-            executable = "AchievementDesk.exe" if label == "previous-install" else APP_NAME + ".exe"
-            run_gui(destination / executable, ROOT / (".ci-artifacts/" + label + ".png"), environment)
+            executable = destination / (APP_NAME + ".exe")
+            if label == "previous-install" and not executable.is_file():
+                executable = destination / "AchievementDesk.exe"
+            run_gui(executable, ROOT / (".ci-artifacts/" + label + ".png"), environment)
             if label != "previous-install":
                 verify_version(destination / (APP_NAME + "Worker.exe"))
                 if any((destination / name).exists() for name in ("AchievementDesk.exe", "AchievementDeskWorker.exe")):

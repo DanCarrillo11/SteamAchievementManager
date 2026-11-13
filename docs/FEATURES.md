@@ -3,7 +3,7 @@
 A Windows desktop application for reading and managing Steam achievements through
 your locally signed-in Steam client. Interface and documentation are in English.
 
-**Version: 1.3.0.** Not affiliated with Valve. This is an independent
+**Version: 1.3.1.** Not affiliated with Valve. This is an independent
 Python implementation, with a Steam adapter adapted from SAM.API's interface
 layouts and connection approach. See THIRD_PARTY_NOTICES.txt.
 
@@ -33,7 +33,7 @@ and achievement states. This is not a screenshot of anyone's Steam account.*
 
 ## Optional installation
 
-Run **SteamAchievementManager-1.3.0-Setup.exe** to install for the current Windows
+Run **SteamAchievementManager-1.3.1-Setup.exe** to install for the current Windows
 user, with a Start menu shortcut and optional desktop shortcut. Administrator
 access is not required. The app does not open automatically after installation
 unless you select that option. Uninstalling retains local preferences and history.
