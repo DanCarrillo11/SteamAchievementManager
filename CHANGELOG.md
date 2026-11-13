@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.1 — 2026-11-13
+
+- Use the new silver trophy as the application, Windows executable and installer icon.
+- Verify upgrades against the published SteamAchievementManager 1.3.0 installer.
+
 ## 1.3.0 — 2026-11-05
 
 - Rename the application to SteamAchievementManager across the interface, Windows

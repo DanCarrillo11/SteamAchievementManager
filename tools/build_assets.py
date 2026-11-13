@@ -4,12 +4,15 @@ os.environ["QT_QPA_PLATFORM"] = "offscreen"
 from pathlib import Path
 import struct
 from PySide6.QtCore import Qt, QBuffer, QIODevice
-from PySide6.QtGui import QPixmap
+from PySide6.QtGui import QImage, QPixmap
 from PySide6.QtWidgets import QApplication
 
 app = QApplication.instance() or QApplication([])
 assets = Path(__file__).resolve().parents[1] / "assets"
-master = QPixmap(str(assets / "logo-master.png"))
+image = QImage(str(assets / "logo-master.png"))
+if image.isNull() or not image.hasAlphaChannel() or image.pixelColor(0, 0).alpha() != 0:
+    raise RuntimeError("assets/logo-master.png must have a transparent background.")
+master = QPixmap.fromImage(image)
 if master.isNull() or master.width() != master.height():
     raise RuntimeError("assets/logo-master.png must be a readable square PNG.")
 images = []
@@ -20,8 +23,9 @@ for size in (16, 24, 32, 48, 64, 128, 256):
     if not pix.save(buffer, "PNG"):
         raise RuntimeError("Could not encode the application icon.")
     images.append((size, bytes(buffer.data())))
-    if size == 256 and not pix.save(str(assets / "app.png")):
-        raise RuntimeError("Could not save assets/app.png.")
+    if size == 256:
+        for name in ("app.png", "logo-transparent.png"):
+            (assets / name).write_bytes(images[-1][1])
 offset = 6 + 16 * len(images)
 directory, data = b"", b""
 for size, png in images:

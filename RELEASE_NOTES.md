@@ -1,37 +1,8 @@
-# SteamAchievementManager 1.3.0
+# SteamAchievementManager 1.3.1
 
-Achievement Desk is now named **SteamAchievementManager**. The window, Settings,
-executable, worker, installer and shortcuts use the new name.
+This update introduces a silver trophy with a blue base and a transparent
+background. The new icon appears in the app, Windows executable and installer.
 
-## Library refresh
-
-A blue circular-arrow button beside **All games** rereads the Steam library to
-discover newly added or removed games and update installation status. It uses
-the existing full-refresh action, including draft confirmation and busy-state
-handling. **Library tools → Refresh library** remains available.
-
-## Downloads
-
-- **SteamAchievementManager-1.3.0-Setup.exe** installs for the current Windows user.
-- **SteamAchievementManager-1.3.0-Portable.zip** contains the complete application.
-  Extract it into a fresh folder and run **SteamAchievementManager.exe**, keeping
-  **SteamAchievementManagerWorker.exe** and `_internal` beside it.
-
-## Upgrade from Achievement Desk
-
-Close the previous application and run the new installer. It uses the existing
-installation identity, replaces the old executable names and creates renamed
-shortcuts. Existing preferences, favorites, activity history, reference snapshots
-and library cache stay under `%LOCALAPPDATA%\AchievementDesk`.
-
-The official repository is now `DanCarrillo11/SteamAchievementManager`.
-GitHub redirects the previous repository URL. If you already use 1.3.0 or an
-older build, set **Settings → Release repository** to
-`DanCarrillo11/SteamAchievementManager` once before checking for updates.
-Those builds validate release links against the repository name saved locally.
-
-Release checks cover the renamed frozen application and worker, synthetic
-library/achievement operations, minimum-size layouts, clean installation and
-upgrade from checksum-pinned Achievement Desk 1.2.0 on a disposable Windows
-runner. The release includes the existing loading states, numbered library pages,
-reviewed achievement changes, completion information and documented game limits.
+Download the setup or extract the complete portable ZIP and open
+`SteamAchievementManager.exe`. To upgrade an installation, close the app
+and run the new setup. The installer keeps local preferences and history.

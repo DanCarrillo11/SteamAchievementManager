@@ -5,8 +5,8 @@
   <p>An independent project by Daniel Carrillo.</p>
   <p><strong>Windows x64 · Stable release · English interface</strong></p>
   <p>
-    <a href="https://github.com/DanCarrillo11/SteamAchievementManager/releases/download/v1.3.0/SteamAchievementManager-1.3.0-Setup.exe"><strong>Download for Windows</strong></a> ·
-    <a href="https://github.com/DanCarrillo11/SteamAchievementManager/releases/download/v1.3.0/SteamAchievementManager-1.3.0-Portable.zip"><strong>Portable ZIP</strong></a>
+    <a href="https://github.com/DanCarrillo11/SteamAchievementManager/releases/download/v1.3.1/SteamAchievementManager-1.3.1-Setup.exe"><strong>Download for Windows</strong></a> ·
+    <a href="https://github.com/DanCarrillo11/SteamAchievementManager/releases/download/v1.3.1/SteamAchievementManager-1.3.1-Portable.zip"><strong>Portable ZIP</strong></a>
   </p>
   <p>
     <a href="#features">Features</a> ·
@@ -23,8 +23,8 @@ achievement states. These screenshots do not show a real user's account.*
 
 ## Availability
 
-**1.3.0** is the current stable release for Windows x64. See the
-[release notes and SHA-256 checksums](https://github.com/DanCarrillo11/SteamAchievementManager/releases/tag/v1.3.0).
+**1.3.1** is the current stable release for Windows x64. See the
+[release notes and SHA-256 checksums](https://github.com/DanCarrillo11/SteamAchievementManager/releases/tag/v1.3.1).
 
 The downloads include the runtime; Python is only needed for development.
 Live operations require an online, signed-in Steam desktop client. No Steam

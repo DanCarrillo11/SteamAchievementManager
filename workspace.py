@@ -6,7 +6,7 @@ from pathlib import Path
 import uuid
 from experience import clean_view
 
-VERSION = "1.3.0"
+VERSION = "1.3.1"
 APP_NAME = "SteamAchievementManager"
 RELEASE_REPOSITORY = "DanCarrillo11/SteamAchievementManager"
 DEFAULTS = dict(reveal_hidden=False, compact=False, reduce_motion=False, online_art=True,

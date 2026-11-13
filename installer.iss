@@ -7,7 +7,7 @@
 [Setup]
 AppId={{C40ABBD0-6868-467A-AC2D-D27F4E53B01A}
 AppName=SteamAchievementManager
-AppVersion=1.3.0
+AppVersion=1.3.1
 AppPublisher=DanCarrillo11
 AppPublisherURL=https://github.com/DanCarrillo11/SteamAchievementManager
 AppSupportURL=https://github.com/DanCarrillo11/SteamAchievementManager/issues
@@ -18,7 +18,7 @@ PrivilegesRequired=lowest
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 OutputDir={#OutputFolder}
-OutputBaseFilename=SteamAchievementManager-1.3.0-Setup
+OutputBaseFilename=SteamAchievementManager-1.3.1-Setup
 SetupIconFile=assets\app.ico
 UninstallDisplayIcon={app}\SteamAchievementManager.exe
 Compression=lzma2
